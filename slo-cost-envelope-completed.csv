@@ -1,0 +1,4 @@
+scenario,monthly_budget_inr,availability_target_pct,latency_p95_ms,rpo_minutes,rto_minutes,expected_users,compute_inr,storage_database_inr,transfer_inr,logging_inr,backup_inr,support_ops_inr,estimated_total_inr,budget_remaining_inr,monthly_error_budget_minutes,assumptions
+Lean,2500,99.0,800,1440,240,500,700,500,150,250,200,700,2500,0,432.0,"Single region, minimal managed services"
+Balanced,8000,99.5,500,60,60,5000,2400,1600,700,800,500,2000,8000,0,216.0,Managed database and autoscaling application tier
+Resilient,25000,99.9,300,15,30,25000,7500,4500,2500,2000,1500,7000,25000,0,43.2,Multi-zone services with tested backups; cross-region active-active not assumed
